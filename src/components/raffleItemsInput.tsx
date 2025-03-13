@@ -15,7 +15,7 @@ const parseList = (list: string | null) => {
   }
 }
 
-const ListInput = () => {
+const RaffleItemsInput = () => {
   const [list, setList] = useState( parseList(localStorage.getItem('listSorteio')));
   const [isSaved, setIsSaved] = useState(false);
 
@@ -46,4 +46,4 @@ const ListInput = () => {
   );
 };
 
-export default ListInput;
+export default RaffleItemsInput;

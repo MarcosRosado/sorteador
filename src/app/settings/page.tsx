@@ -1,11 +1,11 @@
 import {Tabs} from '@/components/tabs';
-import ListInput from '@/components/listInput';
+import RaffleItemsInput from '@components/raffleItemsInput';
 
 export default async function RaffleItems() {
   return (
     <Tabs defaultValue="all">
       <div className="mt-4">
-        <ListInput />
+        <RaffleItemsInput />
       </div>
     </Tabs>
   );

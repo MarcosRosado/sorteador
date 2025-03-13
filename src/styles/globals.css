@@ -8,9 +8,11 @@
   --primary: #3490dc; /* Example primary color */
   --secondary: #3cc6d8; /* Example secondary color */
   --destructive: #e3342f; /* Example destructive color */
+  --danger: #dc2626; /* Example danger color */
   --accent: #a3caf4; /* Example accent color */
   --theme: #4a90e2; /* Example theme color */
   --primary-foreground: #fff; /* Set this based on your design */
+  --success: #10b981;
 }
 
 .dark {
@@ -20,12 +22,28 @@
   --secondary: #3cc6d8; /* Dark mode secondary color */
   --destructive: #dc2626; /* Dark mode destructive color */
   --accent: #60a5fa; /* Dark mode accent color */
+  --danger: #ef4444; /* Dark mode danger color */
   --theme: #2563eb; /* Dark mode theme color */
   --primary-foreground: #ddd; /* Adjust for dark mode */
+  --success: #10b981;
 }
 
 .bg-primary {
   background-color: var(--primary);
+}
+
+.bg-danger {
+  background-color: var(--danger);
+}
+
+.bg-success{
+  background-color: var(--success);
+}
+
+.bg-outline-primary {
+  background-color: transparent;
+  border: 1px solid var(--primary);
+  color: var(--primary);
 }
 
 .bg-primary:hover {
