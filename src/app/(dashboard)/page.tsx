@@ -65,10 +65,10 @@ const MainPage = () => {
     <div className="flex flex-col items-center gap-4">
       <div>
         <Button onClick={handleDrawItem} className="p-2 rounded-md mr-2">
-          Draw Item
+          Sortear
         </Button>
         <Button onClick={handleClearAll} className="p-2 rounded-md">
-          Clear All
+          Limpar sorteio
         </Button>
       </div>
 
