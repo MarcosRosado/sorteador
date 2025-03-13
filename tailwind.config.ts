@@ -14,6 +14,15 @@ export default {
         '2xl': '1400px'
       }
     },
+    extend: {
+      colors: {
+        primary: 'var(--primary)',
+        secondary: 'var(--secondary)',
+        destructive: 'var(--destructive)',
+        accent: 'var(--accent)',
+        theme: 'var(--theme)',
+      },
+    },
   },
   plugins: []
 } satisfies Config;

@@ -4,35 +4,61 @@
   --background: #eff4f3;
   --foreground: #171717;
   --font-sans: 'Montserrat', sans-serif;
+  --font-geist-mono: 'Geist Mono', monospace; /* Define the custom property */
+  --primary: #3490dc; /* Example primary color */
+  --secondary: #3cc6d8; /* Example secondary color */
+  --destructive: #e3342f; /* Example destructive color */
+  --accent: #a3caf4; /* Example accent color */
+  --theme: #4a90e2; /* Example theme color */
+  --primary-foreground: #fff; /* Set this based on your design */
 }
 
 .dark {
   --background: #0a0a0a;
   --foreground: #ededed;
+  --primary: #1d4ed8; /* Dark mode primary color */
+  --secondary: #3cc6d8; /* Dark mode secondary color */
+  --destructive: #dc2626; /* Dark mode destructive color */
+  --accent: #60a5fa; /* Dark mode accent color */
+  --theme: #2563eb; /* Dark mode theme color */
+  --primary-foreground: #ddd; /* Adjust for dark mode */
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.bg-primary:hover {
+  background-color: var(--secondary);
+}
+
+
+.bg-secondary {
+  background-color: var(--secondary);
+}
+
+.bg-destructive {
+  background-color: var(--destructive);
+}
+
+.text-primary-foreground {
+  color: var(--primary-foreground) !important;
+}
+
+.bg-accent {
+  background-color: var(--accent);
+}
+
+.bg-theme {
+  background-color: var(--theme);
 }
 
 button {
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-button:hover {
-  background-color: #4a90e2; /* Change to your desired hover color */
-  transform: scale(1.05);
-}
-
 .hover-color:hover {
-  background-color: #4a90e2; /* Change to your desired hover color */
-}
-
-.bg-accent {
-  background-color: #a3caf4; /* Replace with your desired color */
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-sans);
-  --font-mono: var(--font-geist-mono);
+  background-color: var(--theme); /* Change to your desired hover color */
 }
 
 @media (prefers-color-scheme: light) {
